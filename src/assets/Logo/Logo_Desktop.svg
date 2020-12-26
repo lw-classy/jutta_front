@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="147.434" viewBox="0 0 106 147.434">
+  <g id="Gruppe_5" data-name="Gruppe 5" transform="translate(-21 -25.338)">
+    <g id="Gruppe_1" data-name="Gruppe 1" transform="translate(-265.546 -499.498)">
+      <g id="Logo" transform="translate(307 524.836)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="27.346" cy="27.346" r="27.346" transform="translate(0 14.761)"/>
+        <circle id="Ellipse_2" data-name="Ellipse 2" cx="7.38" cy="7.38" r="7.38" transform="translate(49.72 0)"/>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="7.38" cy="7.38" r="7.38" transform="translate(29.729 24.672)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Gruppe_4" data-name="Gruppe 4" transform="translate(21.647 177.805)">
+      <g id="Gruppe_2" data-name="Gruppe 2" transform="translate(-0.412 -57.764)">
+        <text id="Jutta" transform="translate(0 22)" font-size="23" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Jutta</tspan></text>
+      </g>
+      <g id="Gruppe_3" data-name="Gruppe 3" transform="translate(-0.647 -33.034)">
+        <text id="Schwolow" transform="translate(0 22)" font-size="23" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Schwolow</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

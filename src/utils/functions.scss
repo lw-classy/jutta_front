@@ -1,0 +1,5 @@
+@function divide($base, $divider){
+
+    $result: $base / $divider;
+    @return $result
+}

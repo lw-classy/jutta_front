@@ -1,0 +1,161 @@
+.portfolio{
+    &__overview{
+
+
+        /**
+        **
+        ** Slider
+        **
+        **/
+
+        &__slider{
+           &__container{
+               position: fixed;
+               display: flex;
+               overflow: hidden;
+               background: #f5f7fa;
+               top:0;
+               left: 0;
+               width: 100%;
+               top: $header-height-default*1px;
+               height: calc(100% - #{$header-height-default*1px});
+               
+           }
+
+           &__innerContainer{
+               display: flex;
+               transition: 200ms all ease-out;
+           }
+        }
+
+
+        &__container{
+            @include phones {
+                margin-top: $header-height-default/2 * 1px;
+            }
+            margin-top: $header-height-default * 1px;
+
+
+        }
+
+        &__element{
+
+            
+            padding: 1vh 12vh;
+            &__headline{
+                &__head{
+                    & h1 {
+                        margin-bottom: 0;
+                        text-transform: uppercase;
+                    }
+               }
+               &__sub{
+                   & span {
+                       margin-right: 12px;
+                       text-transform: uppercase;
+                       border-right: 1px solid black;
+                       font-size: 70%;
+                       padding: 0 12px 0 0;
+                   }
+               }
+            }
+
+            &__title{
+                padding: 5vh 1.8vh;
+                font-size: 12px;
+                &__firstline{
+                    & span {
+                        text-transform: uppercase;
+                        display: block;
+
+                    }
+                }
+                &__secondline{
+                     & span {
+                         padding-right: 12px;
+                     }
+                }
+                
+            }
+            
+            &__image{
+                
+                &__container {
+                    position: relative;
+                    margin-top: 10vh;
+                    height: 58vh;
+                    display: inline-block;
+                    width: auto;
+            
+                }
+
+                &__edges{
+                    position: relative;
+                    width: 1.8vh;
+                    height: 58vh;
+
+                    &.right{      
+                        @include transform(scale(-1,1));
+                    }
+                }
+
+                &__edge{
+                    position: absolute;
+                    width: 100%;
+                    height: 1.8vh;
+                     &:nth-child(1){
+                         top: -1.80vh;
+                     }
+                     &:nth-child(2){
+                         bottom: -1.80vh;
+                         @include transform(scale(1,-1))
+                     }
+
+                     &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        height: 1px;
+                        width: 70%;
+                        bottom: 0;
+                        background: #000;
+                     }
+
+                     &::after {
+                         content: "";
+                         position: absolute;
+                         display: block;
+                         height: 70%;
+                         width: 1px;
+                         right: 0;
+                         top: 0;
+                         background: #000;
+                     }
+                }
+                
+                
+                
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+        }
+
+    }
+
+    
+    
+}
+
+
+/*
+//: Locomotive Scroll
+*/
+.loco{
+    &-container{
+        display: flex;
+    }
+}
+

@@ -1,16 +1,32 @@
 {
   "name": "pemf-app",
+  "homepage": "http://lw-classy.github.io/pemf/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.5.0",
+    "dat.gui": "^0.7.7",
+    "gsap": "^3.5.1",
+    "locomotive-scroll": "^4.0.6",
+    "lodash": "^4.17.19",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-marquee-slider": "^1.1.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1",
+    "react-scroll": "^1.8.0",
+    "styled-components": "^5.1.1",
+    "swiper": "^6.3.5",
+    "three": "^0.123.0",
+    "three-orbit-controls": "^82.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "glslify-bundle": "^5.1.1",
+    "glslify-deps": "^1.3.2"
   }
 }

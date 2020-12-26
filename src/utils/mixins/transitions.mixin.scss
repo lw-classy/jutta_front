@@ -1,0 +1,6 @@
+@mixin transition($arguments...){
+    -webkit-transition: $arguments;
+	-moz-transition: $arguments;
+	-ms-transition: $arguments;
+	transition: $arguments;
+}

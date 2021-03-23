@@ -56,7 +56,7 @@ export default function PortfolioOverviewSlideshow(){
             scrollXVirtual(event.deltaY);
         });
 
-        return () => document.removeEventListener('mousewhel', scrollXVirtual);
+        return () => document.removeEventListener('mousewheel', scrollXVirtual);
     }, [size]);
 
 

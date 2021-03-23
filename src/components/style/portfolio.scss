@@ -8,8 +8,7 @@
        grid-template-columns: auto auto;
        grid-auto-rows: auto;
        grid-gap: 30px;
-       grid-row-gap: 10vh;
-       
+       grid-row-gap: 10vh;    
     }
 
     &-detail-header{
@@ -58,6 +57,21 @@
             width: 100%;
             border-top: 1px black solid;
             border-bottom: 1px black solid;
+        }
+    }
+
+    &-detail{
+        &-description{
+            margin-top: 10vh;
+            padding: 10vh 0;
+            background: #1D1D1D;
+
+            &-text {
+                & p {
+                    color: #FFF;
+                    font-size: 3.5vh;
+                }
+            }
         }
     }
 }

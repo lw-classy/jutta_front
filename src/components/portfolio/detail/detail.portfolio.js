@@ -16,7 +16,8 @@ export default function DetailPortfolio(){
    // const [images, setImage] = useState([null]);
 
     return(
-    <div className="portfolio-detail-wrapper container-fluid">
+        <main className="portfolio-detail-container">
+            <div className="portfolio-detail-wrapper container-fluid">
         <div className="row">
             <div className="col-md-10 offset-md-1">
                 <div className="container-fluid">
@@ -34,31 +35,37 @@ export default function DetailPortfolio(){
                             <div className="portfolio-detail-header-categories">Fotografie Portfolio</div>
                             <div className="portfolio-detial-header-year">2020</div>
                         </div>
-                    </div>
-                <div className="container-fluid portfolio-detail-description">
-                    <div className="row">
-                        <div className="col-md-7 portfolio-detail-decription-text">
-                        A comprehensive redevelopment of this former shopping centre, which will be transformed from a vacant building to a vibrant skills hub, at this important gateway to Worksop town centre, supporting a sense of place.
-                        </div>
-                    </div>
-                </div>
-                <div className="portfolio-grid">
-                    <TestImage image={test1}/>
-                    <TestImage image={test2}/>
-               <div className="landscape">
-               <h3>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-               </h3>
-               </div>
-               <TestImage image={test3}/>
-               <TestImage image={test4}/>
-               <TestImage image={test5}/>
-               
-            </div>
+                    </div>  
         </div>
             </div>
         </div>
         
     </div>
+    <div className="container-fluid portfolio-detail-description">
+        <div className="row">
+            <div className="offset-md-4 col-md-7 portfolio-detail-description-text">
+                <p>A comprehensive redevelopment of this former shopping centre, which will be transformed from a vacant building to a vibrant skills hub, 
+                    at this important gateway to Worksop town centre, supporting a sense of place.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div className="container-fluid portfolio-grid-wrapper">
+        <div className="row">
+            <div className="offset-md-1 col-md-10">
+            <div className="portfolio-grid">
+                   <TestImage image={test1}/>
+                <TestImage image={test2}/>
+               <TestImage image={test3}/>
+              <TestImage image={test4}/>
+              <TestImage image={test5}/>
+               
+           </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+    
     );
 }
